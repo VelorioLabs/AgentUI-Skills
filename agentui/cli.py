@@ -2,6 +2,12 @@
 import sys
 import argparse
 import json
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 from agentui.tokens import THEMES, get_theme
 from agentui.templates import TEMPLATES, get_template
 from agentui.linter import UILinter
