@@ -1,0 +1,15 @@
+---
+description: Enforce world-class, modern, cyberpunk and minimalist UI/UX design standards for all web and frontend files.
+globs: ["**/*.tsx", "**/*.jsx", "**/*.html", "**/*.vue", "**/*.svelte", "**/*.css", "**/*.scss"]
+---
+
+# Cursor UI Design System Rule
+
+When generating, modifying, or styling user interfaces:
+1. **Never generate plain, flat gray or default bootstrap-looking UIs**.
+2. **Always pair an interface font (Inter / Plus Jakarta Sans) with a monospace font (JetBrains Mono / Fira Code)** for data, stats, and badges.
+3. **Use layered depth**: Base (`#07090e`), Glass card (`rgba(13, 20, 36, 0.75)` with `backdrop-filter: blur(16px)`), and subtle glowing borders (`border-white/10`).
+4. **Interactive affordances**: Add tactile hover states (`hover:-translate-y-0.5`, `hover:shadow-cyan-500/20`), active states (`active:scale-95`), and animated status pills.
+5. **Color palettes**:
+   - Cyberpunk: Cyan `#00f0ff`, Hot Pink `#ff007f`, Emerald `#00ff88`, Deep Slate `#07090e`.
+   - Linear Minimal: Zinc `#09090b`, Off-white text `#f4f4f5`, Subtle border `#27272a`.
