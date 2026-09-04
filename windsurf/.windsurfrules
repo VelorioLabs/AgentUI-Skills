@@ -1,0 +1,6 @@
+# Windsurf VibeUI Design Rules
+
+- Enforce modern dark-mode aesthetics (deep navy/slate `#07090e`, glowing borders, glassmorphic cards).
+- Never render flat boring `#111` or `#222` gray containers without lighting or depth.
+- Pair sans-serif font for copy with monospace font for stats, tags, and code.
+- Provide tactile hover and active states on all clickable elements.

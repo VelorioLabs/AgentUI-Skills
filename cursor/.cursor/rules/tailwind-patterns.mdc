@@ -1,0 +1,11 @@
+---
+description: Best-practice Tailwind CSS patterns for modern glowing cards, bento grids, and micro-interactions.
+globs: ["**/*.tsx", "**/*.jsx", "**/*.html", "**/*.vue", "**/*.svelte"]
+---
+
+# Tailwind CSS VibeUI Patterns
+
+1. **Card Depth**: Always use `bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl shadow-xl`.
+2. **Glow Buttons**: `bg-gradient-to-r from-cyan-500 to-blue-600 hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] active:scale-95 transition-all`.
+3. **Status Badges**: `inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-xs font-mono border border-emerald-500/30 bg-emerald-500/10 text-emerald-400`.
+4. **Interactive Bento Grid**: Use `grid grid-cols-1 md:grid-cols-3 gap-6`. Hero cells span `md:col-span-2 md:row-span-2`.

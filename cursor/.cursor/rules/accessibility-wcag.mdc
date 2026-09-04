@@ -1,0 +1,11 @@
+---
+description: Ensure all styled components satisfy WCAG AA/AAA contrast and keyboard accessibility.
+globs: ["**/*.tsx", "**/*.jsx", "**/*.html", "**/*.vue"]
+---
+
+# Accessibility & WCAG Standards
+
+1. Text contrast ratio against dark backgrounds must be at least 4.5:1 for normal text, 3:1 for large text.
+2. Form controls must have accessible labels or `aria-label`.
+3. Modal dialogs and command bars must capture focus and dismiss on `Escape`.
+4. Focus indicators must be prominent (`focus-visible:ring-2 focus-visible:ring-cyan-400`).

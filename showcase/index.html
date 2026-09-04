@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentUI // God-Level UI/UX Showcase & Component Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="cyberpunk">
+  <!-- Dynamic Island Floating Navbar -->
+  <nav class="floating-nav">
+    <div class="nav-brand">
+      <div class="brand-dot"></div>
+      <span class="brand-text">AGENT<span class="cyan-glow">UI</span></span>
+    </div>
+    <div class="nav-divider"></div>
+    <div class="theme-selector">
+      <button class="theme-btn active" onclick="setTheme('cyberpunk')">🌌 Cyberpunk</button>
+      <button class="theme-btn" onclick="setTheme('linear')">⚡ Linear</button>
+      <button class="theme-btn" onclick="setTheme('glassmorphism')">💎 Glass 2.0</button>
+      <button class="theme-btn" onclick="setTheme('cosmic')">🪐 Cosmic</button>
+    </div>
+    <button class="btn-primary-sm" onclick="toggleCmdPalette()">Cmd + K ⚡</button>
+  </nav>
+
+  <div class="container">
+    <header class="hero-section">
+      <div class="status-pill">
+        <span class="ping-ring"></span>
+        <span>GOD-LEVEL UI/UX ENGINE // MULTI-AGENT COMPATIBLE</span>
+      </div>
+      <h1 class="hero-title">Eliminate Boring AI Interfaces.</h1>
+      <p class="hero-subtitle">
+        Empowering <strong>Antigravity</strong>, <strong>Claude Code</strong>, and <strong>Cursor</strong> to construct world-class, visually magnetic frontends.
+      </p>
+    </header>
+
+    <!-- Interactive Bento Grid -->
+    <div class="bento-grid">
+      <!-- Card 1: Hero Visualizer -->
+      <div class="bento-card col-span-2 row-span-2">
+        <div class="card-badge">LIVE AUDIO SPECTRAL MESH</div>
+        <h2>Real-Time Reactive Particles</h2>
+        <p>120fps particle frequency analysis with WebAudio and Canvas depth.</p>
+        <div class="audio-waveform-skeleton">
+          <div class="bar" style="animation-delay: 0.1s;"></div>
+          <div class="bar" style="animation-delay: 0.2s;"></div>
+          <div class="bar" style="animation-delay: 0.3s;"></div>
+          <div class="bar" style="animation-delay: 0.4s;"></div>
+          <div class="bar" style="animation-delay: 0.5s;"></div>
+          <div class="bar" style="animation-delay: 0.6s;"></div>
+        </div>
+        <div class="card-footer">
+          <span>Latency: <strong class="text-green">0.8ms</strong></span>
+          <button class="btn-copy" onclick="copyRecipe('bento-card')">COPY RECIPE 📋</button>
+        </div>
+      </div>
+
+      <!-- Card 2: Linter Telemetry -->
+      <div class="bento-card">
+        <div class="card-badge">STATIC DESIGN AUDITOR</div>
+        <h3>25-Point Design Linter</h3>
+        <p>Catches flat gray `#111` backgrounds and missing typography pairings.</p>
+        <div class="linter-score-pill">GRADE: S (GOD LEVEL)</div>
+      </div>
+
+      <!-- Card 3: Dual Typography -->
+      <div class="bento-card">
+        <div class="card-badge">TYPOGRAPHY PAIRING</div>
+        <h3>Inter + JetBrains Mono</h3>
+        <p>Human-readable interface body paired with tactical monospace telemetry.</p>
+        <div class="mono-tag">0x7F // COMPLIANT</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Command Palette Modal -->
+  <div id="cmdPalette" class="cmd-modal" style="display: none;" onclick="if(event.target===this) toggleCmdPalette()">
+    <div class="cmd-box">
+      <div class="cmd-input-row">
+        <span>🔍</span>
+        <input type="text" placeholder="Search component recipes or themes..." id="cmdInput">
+        <kbd>ESC</kbd>
+      </div>
+      <div class="cmd-list">
+        <div class="cmd-item" onclick="setTheme('cyberpunk'); toggleCmdPalette();">🌌 Switch Theme: Cyberpunk HUD</div>
+        <div class="cmd-item" onclick="setTheme('linear'); toggleCmdPalette();">⚡ Switch Theme: Linear Minimalist</div>
+        <div class="cmd-item" onclick="setTheme('glassmorphism'); toggleCmdPalette();">💎 Switch Theme: Glassmorphism 2.0</div>
+        <div class="cmd-item" onclick="copyRecipe('bento-card'); toggleCmdPalette();">📋 Copy Bento Card Template</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
